@@ -1,0 +1,322 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #444444;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #d6a700;
+  }
+  
+  a:hover {
+    color: #ffc56e;
+    text-decoration: none;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+  }
+  /* ===== Scrollbar CSS ===== */
+    /* Firefox */
+    * {
+      scrollbar-width: auto;
+      scrollbar-color: #d6a700;
+    }
+  
+    /* Chrome, Edge, and Safari */
+    *::-webkit-scrollbar {
+      width: 8px;
+    }
+  
+    *::-webkit-scrollbar-track {
+      background: #ffffff;
+    }
+  
+    *::-webkit-scrollbar-thumb {
+      background-color: #d6a700;
+      border: 2px solid #ffffff;
+    }
+  /*--------------------------------------------------------------
+  # career Section
+  --------------------------------------------------------------*/
+  #career {
+    width: 100%;
+    height: 80vh;
+    background-color: rgba(39, 37, 34, 0.8);
+    overflow: hidden;
+    padding: 0;
+  }
+  #career .carousel-item {
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  #career .carousel-item::before {
+    content: "";
+    background-color: rgba(12, 11, 10, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+  #career .carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  #career .carousel-content {
+    text-align: center;
+  }
+  #career h2 {
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 70px;
+    font-weight: 700;
+  }
+  #career h2 span {
+    color: #d6a700;
+  }
+  #career p {
+    width: 80%;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+    margin: 0 auto 30px auto;
+    color: #fff;
+  }
+  #career .carousel-inner .carousel-item {
+    transition-property: opacity;
+    background-position: center top;
+  }
+  #career .carousel-inner .carousel-item,
+  #career .carousel-inner .active.carousel-item-start,
+  #career .carousel-inner .active.carousel-item-end {
+    opacity: 0;
+  }
+  #career .carousel-inner .active,
+  #career .carousel-inner .carousel-item-next.carousel-item-start,
+  #career .carousel-inner .carousel-item-prev.carousel-item-end {
+    opacity: 1;
+    transition: 0.5s;
+  }
+  #career .carousel-inner .carousel-item-next,
+  #career .carousel-inner .carousel-item-prev,
+  #career .carousel-inner .active.carousel-item-start,
+  #career .carousel-inner .active.carousel-item-end {
+    left: 0;
+    transform: translate3d(0, 0, 0);
+  }
+  #career .carousel-control-next-icon, #career .carousel-control-prev-icon {
+    background: none;
+    font-size: 30px;
+    line-height: 0;
+    width: auto;
+    height: auto;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    transition: 0.3s;
+    color: rgba(255, 255, 255, 0.993);
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #career .carousel-control-next-icon:hover, #career .carousel-control-prev-icon:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.8);
+  }
+  #career .carousel-indicators li {
+    cursor: pointer;
+  }
+  #career .btn-menu, #career .btn-book {
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    line-height: 1;
+    margin: 0 10px;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    color: #fff;
+    border: 2px solid #d6a700;
+  }
+  #career .btn-menu:hover, #career .btn-book:hover {
+    background: #d6a700;
+    color: #fff;
+  }
+  @media (max-width: 768px) {
+    #career h2 {
+      font-size: 28px;
+    }
+  }
+  @media (min-width: 1024px) {
+    #career p {
+      width: 50%;
+    }
+    #career .carousel-control-prev, #career .carousel-control-next {
+      width: 5%;
+    }
+  }
+  
+  /*--------------------------------------------------------------
+  # Sections General
+  --------------------------------------------------------------*/
+  section {
+    padding: 60px 0;
+  }
+  
+  .section-bg {
+    background-color: white;
+  }
+  
+  .section-title {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .section-title h2 {
+    margin: 15px 0 0 0;
+    font-size: 70px;
+    font-weight: 700;
+    color: #5f5950;
+  }
+  .section-title h2 span {
+    color: #d6a700;
+  }
+  .section-title p {
+    margin: 15px auto 0 auto;
+    font-weight: 300;
+  }
+  @media (min-width: 1024px) {
+    .section-title p {
+      width: 50%;
+    }
+  }
+  
+  
+  /*--------------------------------------------------------------
+  # jobs openings
+  --------------------------------------------------------------*/
+  .jobs_opening .box {
+    padding: 50px 30px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    transition: all ease-in-out 0.3s;
+    height: 100%;
+  }
+  
+  .jobs_opening .job-button{
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #d6a700;
+    color: black;
+    border: 1px solid #e1c562;
+    border-radius: 5px;
+  }
+  .jobs_opening .box span {
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+    color: #ffcf88;
+  }
+  .jobs_opening .box h4 {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0;
+    margin: 20px 0;
+    color: #6c665c;
+  }
+  .jobs_opening .box p {
+    color: #aaaaaa;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+  }
+  .jobs_opening .box:hover {
+    background: #e1c562;
+    padding: 30px 30px 70px 30px;
+    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+  }
+  .jobs_opening .job-button:hover{
+    background-color: #fff;
+    border: 1px solid #f2f1ef;
+  }
+  .jobs_opening .box:hover span, .jobs_opening .box:hover h4, .jobs_opening .box:hover p {
+    color: #fff;
+  }
+  
+  /*--------------------------------------------------------------
+  # why_us
+  --------------------------------------------------------------*/
+  .why_us {
+    overflow: hidden;
+  }
+  .why_us .nav-tabs {
+    border: 0;
+  }
+
+  .why_us_header{
+      font-size: 55px;
+  }
+.why_us img{
+    height: 300px;
+    width: 300px;
+}
+
+  .why_us .nav-link {
+    border: 0;
+    padding: 12px 15px 12px 0;
+    transition: 0.3s;
+    color: #433f39;
+    border-radius: 0;
+    border-right: 3px solid #727272;
+    font-weight: 600;
+    font-size: 23px;
+  }
+  .why_us .nav-link:hover {
+    color: #d6a700;
+  }
+  .why_us .nav-link.active {
+    color: #d6a700;
+    border-color: #d6a700;
+  }
+  .why_us .tab-pane.active {
+    -webkit-animation: fadeIn 0.5s ease-out;
+    animation: fadeIn 0.5s ease-out;
+  }
+  .why_us .details h3 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #433f39;
+  }
+  .why_us .details p {
+    font-size: 20px;
+    color: #777777;
+  }
+  .why_us .details p:last-child {
+    margin-bottom: 0;
+  }
+  @media (max-width: 992px) {
+    .why_us .nav-link {
+      border: 0;
+      padding: 15px;
+    }
+    .why_us .nav-link.active {
+      color: rgb(170, 169, 169);
+      background: #d6a700;
+    }
+  }

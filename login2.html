@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./assets/css/style6.css">
+  </head>
+  <body>
+    <div class="sign-in-up-form">
+        <ul class="tab-group">
+            <li class="tab active"><a href="#login">Login</a></li>
+            <!-- <li class="tab"><a href="#signup">Sign Up</a></li> -->
+        </ul>
+    
+        <div class="tab-content">
+            <div id="login">
+                <h1>Already have an Account?<br />Welcome back!</h1>
+    
+                <form action="/" method="post">
+                    <div class="field-wrap">
+                        <label id="label_userEmail">Email Address<span class="req">*</span></label>
+                        <input type="email" name="userEmail" id="userEmail" autocomplete="off" />
+                    </div>
+    
+                    <div class="field-wrap">
+                        <label id="label_userPass">Password<span class="req">*</span></label>
+                        <input type="password" name="userPass" id="userPass" autocomplete="off" />
+                    </div>
+    
+                    <p class="forgot resetPass"><a data-toggle="modal" href="#resetPassword">Forgot Password?</a></p>
+                    <button class="button button-block" />Sign in</button>
+                </form>
+            </div>
+    
+            <div>
+            </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="resetPassword" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button>
+                    <h4 class="modal-title" style="margin-left: auto; margin-right: auto;">Reset Your Account Password</h3>
+                    </div>
+                    <form action="" method="post">
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label for="accountEmail">Account Email</label>
+                                <input type="email" class="form-control" required="required" name="accountEmail" value="" />
+                                <span class="help-block">The email address associated with your Account.</span>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default btn-sm btn-icon" data-dismiss="modal"><i class="fa fa-times"></i> Cancel</button>
+                            <button type="input" name="submit" value="resetPass" class="btn btn-success btn-sm btn-icon"><i class="fa fa-check-square-o"></i> send OTP</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="./assets/js/login2.js"></script>
+
+  </body>
+</html>
