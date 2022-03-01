@@ -1,189 +1,92 @@
+/* :root{
+    --body:#888;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+}
+.navbar{
+    box-shadow: var(--box-shadow);
+} */
+/* .navbar .nav-item{
+    font-size: 14px;
+    font-weight: 700;
+}
+.navbar .btn btn-outline-success{
+    padding: 14px 18px;
+    border-width: 2px;
+    border-radius: 0;
+} */
+.card-effect{
+    box-shadow: var(--box-shadow);
+    background-color: #fff;
+    padding: 20px;
+    transition: all 0.35s ease;
+}
+.card-effect:hover{
+    box-shadow: none;
+    transform: translateY(20px);
+}
+/* .container {
+    background-color: burlywood;
+} */
+.iconbox{
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+.service{
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+.service::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background-color: #888;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.service:hover .iconbox{
+    background-color: #fff;
+    color: #888;
+}
+.service:hover p,
+.service:hover h5{
+    color: #fff;
+}
+.service:hover::after{
+    opacity: 1;
+    top: 0;
+}
 
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 header{
-  position:fixed;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: .6s;
-  padding: 40px 100px;
-}
-/* .navbar{
-  background-color: #5777ba;
-} */
-.navbar .navbar-brand{
-  position: relative;
-  color: #fff;
-  font-weight: 700;
-  font-size: 2em;
-  text-transform: uppercase ;
-  letter-spacing: 2px;
-  transition: .6s;
-}
-.navbar-nav .nav-link{
-  color: #183a1d;
-}
-
-
-/*--------------------------------------------------------------
-# Sections General
---------------------------------------------------------------*/
-section {
-  padding: 60px 0;
-  overflow: hidden;
-}
-
-.section-bg {
-  background-color: #f2f5fa;
-}
-
-.section-title {
-  text-align: center;
-  padding-bottom: 30px;
-}
-.section-title h2 {
-  font-size: 32px;
-  font-weight: 400;
-  margin-bottom: 20px;
-  padding-bottom: 0;
-  color: #5777ba;
-  font-family: "Poppins", sans-serif;
-}
-.section-title p {
-  margin-bottom: 0;
-}
-/*--------------------------------------------------------------
-# Carousel
---------------------------------------------------------------*/
-
-
-
-/*--------------------------------------------------------------
-# Contact
---------------------------------------------------------------*/
-
-.contact .info {
-  padding: 20px 40px;
-  background: #f1f3f6;
-  color: #47536e;
-  text-align: center;
-  border: 1px solid #fff;
-}
-.contact .info i {
-  font-size: 48px;
-  color: #9fb2d8;
-  margin-bottom: 15px;
-}
-.contact .info h4 {
-  padding: 0;
-  margin: 0 0 10px 0;
-  font-size: 16px;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
-}
-.contact .info p {
-  font-size: 15px;
-}
-.contact .php-email-form {
-  width: 100%;
-}
-.contact .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #183a1d;
-  text-align: left;
-  padding: 13px;
-  font-weight: 600;
-}
-.contact .php-email-form .error-message br + br {
-  margin-top: 25px;
-}
-.contact .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-.contact .php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-}
-.contact .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
-}
-.contact .php-email-form label {
-  font-family: "Poppins", sans-serif;
-  margin-bottom: 5px;
-  color: #8a8c95;
-}
-.contact .php-email-form input, .contact .php-email-form textarea {
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
-}
-.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
-  border-color: #5777ba;
-}
-.contact .php-email-form input {
-  padding: 10px 15px;
-}
-.contact .php-email-form textarea {
-  padding: 12px 15px;
-}
-.contact .php-email-form button[type=submit] {
-  background: #fff;
-  border: 2px solid #5777ba;
-  padding: 10px 24px;
-  color: #5777ba;
-  transition: 0.4s;
-  border-radius: 50px;
-  margin-top: 5px;
-}
-.contact .php-email-form button[type=submit]:hover {
-  background: #5777ba;
-  color: #fff;
-}
-@media (max-width: 1024px) {
-  .contact .php-email-form {
-    padding: 30px 15px 15px 15px;
+    position:fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .6s;
+    padding: 40px 100px;
   }
-}
-@media (max-width: 768px) {
-  .contact .php-email-form {
-    padding: 15px 0 0 0;
+  /* .navbar{
+    background-color: #5777ba;
+  } */
+  .navbar .navbar-brand{
+    position: relative;
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-transform: uppercase ;
+    letter-spacing: 2px;
+    transition: .6s;
   }
-}
-@-webkit-keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
+  .navbar-nav .nav-link{
+    color: #183a1d;
   }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
+  
